@@ -1,7 +1,5 @@
 # jekyll-theme-conference
 
-![Screenshot](screenshot.png)
-
 This is a responsive [Jekyll](http://jekyllrb.com) theme based on [Bootstrap 4](http://getbootstrap.com) for conferences. It contains
 
 - multiday program / schedule,
@@ -34,7 +32,6 @@ The theme was originally created for the yearly Winterkongress conference of the
 6. Regex:
    - `    (.*),(.*)`
    - `\t<div class="column">\n\t\t$1\n\t\t<br>\n\t\t<span class="affiliation">\n\t\t\t$2\n\t\t</span>\n\t</div>`
-
 
 
 ## Table of Contents
