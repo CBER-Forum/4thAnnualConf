@@ -1,0 +1,26 @@
+
+  </main>
+  
+  {%- include partials/modal_link.html -%}
+  
+  {%- if site.conference.live.streaming.enable -%}
+  {%- include partials/modal_live.html -%}
+  {%- endif -%}
+
+  <!-- Append build time to avoid caching of live program embedded in JavaScript file -->
+  <script src="{{ site.baseurl }}/assets/js/main.js?t={{ site.time | date: "%s" }}"></script>
+
+  <footer style="position: relative; margin-left:auto; margin-right:auto; margin-top:5em; margin-bottom:0em;">
+    <nav class="bg-light mb-0">
+      <div class="container">
+        <center>
+          <a href="mailto:contact@cber-forum.org"><i class="fas fa-envelope" style="font-size: 2.5em;"></i></a>
+          <a href="https://x.com/CBER_Forum"><i class="fab fa-twitter" style="font-size: 2.5em;"></i></a>
+          <a href="https://www.youtube.com/channel/UC4Mvv5LUJ7hPi7ZFewjVhJQ" style="font-size: 2.5em;"><i class="fab fa-youtube"></i></a>
+        </center>
+      </div>
+    </nav>
+  </footer>
+  <!-- <nav class="container navbar navbar-expand-{{ site.conference.navigation.breakpoint | default: 'md' }} navbar-light bg-light mb-0" style="position: absolute; bottom: 0; display: table; text-align: center; margin-left: auto; margin-right: auto;"></nav> -->
+</body>
+</html>
